@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #main{
+            width: 550x;
+            margin: auto;
+            padding: 10px
+        }
+        h1{
+            text-align: center;
+        }
+        #top{
+            margin-bottom: 10px;
+        }
+
+        #middle{
+            border: 1px solid gray;
+            width: 350px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 50p 20px;
+        }
+
+        #bottom{
+              word-spacing: 2px;
+        }
+
+        #inputDiv{
+            width: 350px;
+            margin: auto;
+            margin-bottom: 100px;
+        }
+
+        #btnDiv{
+            width: 350px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .inputTag{
+            width: 350px;
+            padding: 0px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            height: 50px;
+            font-size: large;
+        }
+        .inputTag:focus{
+            outline: none;
+        }
+        .inputTag::placeholder{
+            font-size: large;
+        }
+
+        #loginBtn{
+            background-color: rgb(252, 64, 64);
+            width: 350px;
+            padding: 20px;
+            font-size: large;
+            border: 0px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .hr-sect {
+            display: flex;
+            flex-basis: 100%;
+            align-items: center;
+            color: rgba(0, 0, 0, 0.35);
+            font-size: 12px;
+            margin: 8px 0px;
+        }
+        .hr-sect::before,
+        .hr-sect::after {
+            content: "";
+            flex-grow: 1;
+            background: rgba(0, 0, 0, 0.35);
+            height: 1px;
+            font-size: 0px;
+            line-height: 0px;
+            margin: 0px 16px;   
+        }
+        #joinDiv{
+            width: 350px;
+            margin: auto;
+        }
+        .joinTag{
+            text-decoration: none;
+            color: black;
+        }
+        .padding100{
+            padding-left: 110px;
+        }
+    </style>
+        <div id="top">
+          <h1> <img src="c:\Users\human-14\Documents\카카오톡 받은 파일\Downloads\11st.jpg.svg">
+        </div>
+        <div id="middle">
+            <div id="inputDiv">
+                <input type="text" class="login" placeholder="아이디 입력"/>
+                <br/>
+                <input type="password" class="login" placeholder="비밀번호 8자~20자"/>
+            </div>
+            <div id="btnDiv">
+                <button type="button" id="loginBtn">로그인</button>
+
+
+             <div class="c-sns_list">
+                <ul class="c-sns_item">
+                    <a href="#" class="c-sns_link c-sns_link-kakao"></a>
+                    <img src="c:\Users\human-14\Documents\카카오톡 받은 파일\Downloads\sns-kakao.svg">
+                    <img src="c:\Users\human-14\Documents\카카오톡 받은 파일\Downloads\sns-naver.svg">
+                    <img src="c:\Users\human-14\Documents\카카오톡 받은 파일\Downloads\sns-tid.svg">
+                    <img src="c:\Users\human-14\Documents\카카오톡 받은 파일\Downloads\sns-apple.svg">
+                    <img src="c:\Users\human-14\Documents\카카오톡 받은 파일\Downloads\sns-payco.svg">
+                    <img src="c:\Users\human-14\Documents\카카오톡 받은 파일\Downloads\sns-facebook.svg">
+                    <img src="c:\Users\human-14\Documents\카카오톡 받은 파일\Downloads\sns-phone.svg">
+                </ul>
+            </div>
+
+            <div id="joinDiv"> 
+                <a href="#" class="joinTag">아이디찾기</a>                     
+                <a href="#" class="joinTag">비밀번호찾기</a>
+                <a href="#" class="joinTag">비회원 주문조회</a>
+                <a href="#" class="joinTag">회원가입</a>
+            </div>
+
+        </div>
+        <div id="bottom">
+         <h1> <img src="c:\Users\human-14\Documents\카카오톡 받은 파일\Downloads\2023122009052027821_13147049_1.png">
+        </div>
+    </div>
+</body>
+</html>
+
+
+
