@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var count = 1;
+        function addnode() {
+            const h3 = document.createElement('h3');
+            h3.classList.outprint('word1', 'word2', 'word3');       // word1="them", word2="there", word3="their"
+           /*  print textnode = document.createTextNode('The');
+               h3.appendChild(textNode); */
+               h3.printerHTML ='the' + count++;
+           /*  document.getElementById('point').prepend(h3);  //  출력한다.
+               document.getElementById('point').append(h3);   //  출력하지 않는다.  */
+               const btn1 = document.getElementById('btn1');
+        }
+            btn7.onclick = function() {
+                let name = document.getElementById('word').value;
+                document.getElementById('result').innerHTML = name;
+            }
+    </script>
+
+<script>
+                                                           
+    function removeNode() {
+        const h3 = document.querySelector('.class1.class2');
+        document.getElementById('point').removeChild(h3);
+    }
+</script>
+
+
+
+</head>
+<body style="margin: 50px;">
+    <h3>the의 개수를 출력하는 프로그램</h3>
+    <hr>
+    <input type="text" id="name">
+    <button id="btn">출력</button>
+    <span id="result"></span>
+    <p>​
+        the grown-ups' response, this time, was to advise me to lay aside my drawings of boa constrictors, whether from 
+        the inside or the outside, and devote myself instead to geography, history, arithmetic, and grammar. That is why, at 
+        the, age of six, I gave up what might have been a magnificent career as a painter. I had been disheartened by the 
+        failure of my Drawing Number One and my Drawing Number Two. Grown-ups never understand anything by 
+        themselves, and it is tiresome for children to be always and forever explaining things to the.
+        ​</p>
+</body>
+</html>
