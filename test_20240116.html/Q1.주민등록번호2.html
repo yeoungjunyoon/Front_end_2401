@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Q1-2.주민등록번호.html(Q2.JQuery)</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script>
+    $(document).on("keypress keyup keydown", "input[numberOnly]", function(e){
+            if(/[a-z|ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/g.test(this.value)){
+                e.preventDefault();
+                this.value = "";
+            }else if (e.which != 8 && e.which != 0 && e.which < 48 || e.which > 57 && e.which < 96 || e.which > 105){
+                e.preventDefault();
+                this.value = "";
+            }else if (this.value.length == this.maxLength){
+                this.value = this.value.slice(0, this.maxLength);
+                $("#id_data_birth_2").focus();
+            }
+    });
+    </script>
+
+</head>
+<body style="margin: 30px;">
+    <h2>주민등록번호</h2>
+    <input type="text" id="id_data_birth_1" maxlength="6" numberOnly>-
+    <input type="text" id="id_data_birth_2" maxlength="1">
+</body>
+</html>
+

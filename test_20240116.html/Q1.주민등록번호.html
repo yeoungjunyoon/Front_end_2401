@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1-1.주민등록번호.html(Javascript)</title>
+    <script>
+      function moveCursor(textbox) {
+        if (textbox.value.lenght ==6){
+          document.getElementById("code").focus();
+        }
+      }
+    </script>
+</head>
+<body>
+  <h2>주민등록번호</h2>
+  <input type="text" name="birth_1"  maxlength="6" onKeyUp="if(this.value.length==6)regForm.text1.focus()">-
+  <input type="text" name="birth_2"  maxlength="1" onKeyUp="if(this.value.length==7)regForm.text2.focus();">               
+</body>
+</html> 
